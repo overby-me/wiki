@@ -1,0 +1,23 @@
+build: install build-gqty build-rsbuild
+
+build-rsbuild:
+    export PUBLIC_GIT_COMMIT_SHA=$(git rev-parse HEAD)
+    deno run -A npm:@rsbuild/core build
+
+build-gqty:
+    deno run -A npm:@gqty/cli generate
+
+dev: build-gqty
+    deno run -A npm:@rsbuild/core dev --open
+
+install:
+    deno install
+
+start:
+    deno run -A npm:@rsbuild/core preview
+
+lint:
+    deno lint
+
+build-nix:
+    nix build .#wiki-frontend --print-build-logs
