@@ -8,7 +8,7 @@
 # ban: the count may only ever go DOWN. When you migrate a literal to a token,
 # lower BASELINE to match; never raise it.
 #
-# Wire into CI / pre-commit:  nu web/wiki-dioxus/scripts/check-css-spacing.nu
+# Wire into CI / pre-commit:  nu web/wiki/scripts/check-css-spacing.nu
 
 # The current sanctioned ceiling. Lower this as literals are migrated to tokens.
 const BASELINE = 0

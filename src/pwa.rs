@@ -8,7 +8,7 @@ use dioxus::prelude::*;
 
 const ICON: Asset = asset!("/assets/icon.svg");
 /// The service worker is served from the site ROOT (`/sw.js`) — copied there by
-/// the `wiki-dioxus-frontend` Nix package's install phase — rather than via
+/// the `wiki-frontend` Nix package's install phase — rather than via
 /// `asset!()` (which hashes it under `/assets/`, limiting its scope to
 /// `/assets/`). A worker registered at `/sw.js` gets scope `/` by default, so it
 /// controls the whole app (`/`, `/wasm/*`) for offline use.

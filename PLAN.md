@@ -1,7 +1,7 @@
 # RadikalWiki Dioxus — remaining work
 
-`web/wiki-dioxus` is a Rust/Dioxus/WASM port of the React app in
-[`web/wiki`](../wiki), against the same NHost/Hasura backend (production
+`web/wiki` is a Rust/Dioxus/WASM port of the former React app (which it has now
+replaced), against the same NHost/Hasura backend (production
 <https://radikal.wiki>; test with a real account — never commit credentials).
 
 This plan lists **only what is still missing or partial** versus the React
@@ -28,7 +28,7 @@ Radikale brand via `scripts/gen-theme.ts` → `assets/m3-theme.css`, plus
   `WIKI_EMAIL=… WIKI_PASSWORD=… just test-browser` adds authed checks against the
   live backend, `--shots` saves light/dark × desktop/mobile screenshots to
   `./screenshots` (read them — the contrast audit can't see layout/visual bugs).
-- Per gap: reproduce in `web/wiki`, build it in `wiki-dioxus`, diff the GraphQL,
+- Per gap: reproduce the behaviour, build the fix here, diff the GraphQL, and
   lock it in with a unit test and/or a `test-browser.nu` assertion.
 
 ---
