@@ -6,14 +6,14 @@
 [workspace]
 resolver = "2"
 members = [
-    "ballot-spec",
-    "ballot-store",
-    "schema",
-    "dagcbor-spike",
-    "durability-harness",
-    "oauth-spike",
-    "domain-types",
-    "migration-extractor",
-    "migration-loader",
-    "appview",
+  "appview",
+  "ballot-spec",
+  "ballot-store",
+  "dagcbor-spike",
+  "domain-types",
+  "durability-harness",
+  "migration-extractor",
+  "migration-loader",
+  "oauth-spike",
+  "schema",
 ]

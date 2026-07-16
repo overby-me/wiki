@@ -14,7 +14,7 @@
 pkgs.testers.nixosTest {
   name = "wiki-appview-e2e";
 
-  nodes.machine = {lib, ...}: {
+  nodes.machine = {...}: {
     imports = [./nixos-module.nix];
 
     services.wiki-appview = {
