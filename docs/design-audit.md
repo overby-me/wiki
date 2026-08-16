@@ -1,6 +1,6 @@
 # Presentation-layer design audit (2026-07)
 
-A dimension-by-dimension audit of the parts of `web/wiki-dioxus` that survive the
+A dimension-by-dimension audit of the parts of `apps/wiki-dioxus` that survive the
 planned atproto/Rust backend rewrite: the design system, component library,
 layout, accessibility, and screen UX. **Overall verdict: good shape — the work is
 enforcement and consistency, not rescue.** Color/elevation/shape/motion are

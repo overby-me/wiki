@@ -1,7 +1,7 @@
 # Feature parity audit: old React wiki vs Dioxus port
 
 Date: 2026-07-15. Method: seven parallel domain audits comparing
-`web/wiki/src` (old React app) against `web/wiki-dioxus/src` (this port),
+`apps/wiki/src` (old React app) against `apps/wiki-dioxus/src` (this port),
 each reporting only functional gaps with `file:line` evidence, followed by
 manual verification of the top findings. Prompted by the discovery that the
 port's "Add content" dialog had silently dropped the ability to create
