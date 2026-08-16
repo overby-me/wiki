@@ -15,7 +15,7 @@ turn a `.docx` / `.xlsx` / `.pptx` into a JSON document model, which
 It started as a pinned git dependency, which is what this repo does elsewhere
 (see `dioxus-primitives`). That works for one of these crates and fails for two:
 
-```
+```text
 warning: Linking globals named '__wbindgen_describe_extract_image':
          symbol multiply defined!
 error: failed to load bitcode of module "pptx_parser-….rcgu.o"

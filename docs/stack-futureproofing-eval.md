@@ -1,7 +1,7 @@
 # Stack Future-Proofing Evaluation (atproto rewrite of the civic-assembly tool)
 
 This document consolidates a per-cluster future-proofing audit of the tech-radar (the monorepo-root
-README at `/home/overby.me/Work/overby.me/README.md`) against the atproto rewrite of `web/wiki-dioxus`.
+README at `/home/overby.me/Work/overby.me/README.md`) against the atproto rewrite of `apps/wiki-dioxus`.
 Every component receives a decisive verdict: keep, keep-and-extend, or change. Where the adversarial
 verification refuted or corrected a verdict, the corrected recommendation is the one recorded here; where
 verification confirmed a verdict, that is stated plainly.
@@ -152,7 +152,7 @@ Verification confirmed every load-bearing claim against the live spec:
   verifiers must handle both curves.
 
 Should the README note an exception? Yes, explicitly. The signing row lives in the monorepo-root README's
-Cryptographic Primitives table (not in the `web/wiki-dioxus` README, which has no crypto table), and that
+Cryptographic Primitives table (not in the `apps/wiki-dioxus` README, which has no crypto table), and that
 same table already blesses AT Protocol and ATProto DID as current standards, so it is internally
 self-contradictory: it commits to atproto while listing a curve atproto forbids for the load-bearing keys.
 Add an atproto-exception row there: Signing (atproto/wiki context) = P-256/secp256k1 (ECDSA, low-S), with

@@ -21,7 +21,7 @@
 # A and B are RATCHETS: the counts may only ever go DOWN. When you migrate a
 # literal to a token, lower the matching BASELINE; never raise it.
 #
-# Wire into CI / pre-commit:  nu web/wiki/scripts/check-css-spacing.nu
+# Wire into CI / pre-commit:  nu apps/wiki/scripts/check-css-spacing.nu
 
 # Current sanctioned ceilings. Lower these as literals are migrated to tokens.
 const CSS_BASELINE = 0

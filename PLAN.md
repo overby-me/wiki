@@ -1,6 +1,6 @@
 # RadikalWiki Dioxus — remaining work
 
-`web/wiki` is a Rust/Dioxus/WASM port of the former React app (which it has now
+`apps/wiki` is a Rust/Dioxus/WASM port of the former React app (which it has now
 replaced), against the same NHost/Hasura backend (production
 <https://radikal.wiki>; test with a real account — never commit credentials).
 
@@ -302,6 +302,6 @@ Verified by the audit as dead code, intentional divergences, or already covered:
   `null` comparison expressions). Prefer `..Default::default()` +
   `skip_serializing_if`. Several §1–§6 gaps are just missing struct fields.
 - **Permissions:** queries run with the user token; compare row visibility with
-  `web/wiki` for the same account. Frontend gating (§2) should mirror the backend.
+  `apps/wiki` for the same account. Frontend gating (§2) should mirror the backend.
 - **Field naming:** cynic maps snake_case Rust → camelCase GraphQL
   (`mime_id` → `mimeId`); the schema is camelCase.

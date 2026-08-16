@@ -1,6 +1,6 @@
 # atproto port — design notes
 
-The current `web/wiki-dioxus` (Dioxus/WASM frontend + axum backend on top of
+The current `apps/wiki-dioxus` (Dioxus/WASM frontend + axum backend on top of
 nhost/Hasura/Postgres) is an **interim** step. The plan is to **fully replace
 Hasura + nhost + Postgres with a custom Rust backend + a new database**, built on
 [atproto](https://atproto.com). This document collects the architecture thinking
