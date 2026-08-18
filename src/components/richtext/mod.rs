@@ -1154,7 +1154,10 @@ mod tests {
             link_href("https://example.com/a?b=1"),
             Some("https://example.com/a?b=1".to_string())
         );
-        assert_eq!(link_href("http://a.bc"), Some("http://a.bc".to_string()));
+        assert_eq!(
+            link_href("http://a.invalid"),
+            Some("http://a.invalid".to_string())
+        );
         assert_eq!(
             link_href("www.example.com"),
             Some("https://www.example.com".to_string())
@@ -1199,15 +1202,15 @@ mod tests {
     #[test]
     fn a_bare_domain_with_no_path_is_a_link() {
         assert_eq!(
-            link_segments("https://niclasoverby.me"),
+            link_segments("https://site.invalid"),
             vec![(
-                "https://niclasoverby.me".to_string(),
-                Some("https://niclasoverby.me".to_string())
+                "https://site.invalid".to_string(),
+                Some("https://site.invalid".to_string())
             )]
         );
         assert_eq!(
-            plain_text_to_html("https://niclasoverby.me"),
-            r#"<a href="https://niclasoverby.me">https://niclasoverby.me</a>"#
+            plain_text_to_html("https://site.invalid"),
+            r#"<a href="https://site.invalid">https://site.invalid</a>"#
         );
     }
 
